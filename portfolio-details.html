@@ -42,20 +42,17 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/2157513892_preview_1.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Alex Smith</h1>
+      <h1 class="sitename">Youngwon Choi</h1>
     </a>
 
     <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
       <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
       <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
 
@@ -65,7 +62,6 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">Dropdown 1</a></li>
@@ -105,77 +101,89 @@
     </div><!-- End Page Title -->
 
     <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+<section id="portfolio-details" class="portfolio-details section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="portfolio-details-slider swiper init-swiper">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": 1,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
 
-        <div class="row gy-4">
+      <div class="swiper-wrapper">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/app-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="">
-                </div>
-
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <img src="assets/img/portfolio/EfF_Main.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: C/C++ Game</li>
+                  <li><strong>Engine</strong>: C Processing</li>
+                  <li><strong>Participants</strong>: 2</li>
+                  <li><strong>Role</strong>: GameObjects(Player, Footprint, Items, etc), Collision</li>
+                  <li><strong>Project date</strong>: 10 April, 2025 - 14 May, 2025</li>
+                  <li><strong>Project GitHub</strong>: <a href="https://github.com/fenrir94/Hidden_Pickle">Github Link</a></li>
+                  <li><strong>Download Link</strong>: <a href="https://github.com/fenrir94/Hidden_Pickle/releases">Download</a></li>
+                  <li><strong>Play Video</strong>: <a href="https://drive.google.com/file/d/1i8o4cIEUUz3HGpJOtxA5wHReE7EMRIyL/view?usp=drive_link">Play Video</a></li>
+                </ul>
               </div>
-              <div class="swiper-pagination"></div>
+              <div class="portfolio-description">
+                <h2>Escape from Footprint</h2>
+                <p>
+                  Escaepe frome Footprint는 보이지 않는 적의 발자국과 소리를 통해 적의 위치를 파악하여 피하거나 적을 사살하고 맵에 숨겨진 열쇠를 찾아 탈출하는 게임입니다. 
+                </p>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
-
         </div>
 
-      </div>
+        <!-- Slide 2 (예시 복제) -->
+        <div class="swiper-slide">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <img src="assets/img/portfolio/EscapefromFootprint.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: C/C++ Game</li>
+                  <li><strong>Engine</strong>: C Processing</li>
+                  <li><strong>Project date</strong>: 10 April, 2025 - 14 May, 2025</li>
+                  <li><strong>Project URL</strong>: <a href="https://github.com/fenrir94/Hidden_Pickle">GitHub</a></li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Escape from Footprint</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies eros vitae urna dapibus, vel convallis sapien efficitur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    </section><!-- /Portfolio Details Section -->
+      </div> <!-- swiper-wrapper -->
+      <div class="swiper-pagination"></div>
+    </div> <!-- portfolio-details-slider -->
+  </div> <!-- container -->
+</section><!-- /Portfolio Details Section -->
 
   </main>
 
