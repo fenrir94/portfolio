@@ -58,7 +58,7 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Games</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -101,8 +101,7 @@
     <!-- Portfolio Details Section -->
 <section id="portfolio-details" class="portfolio-details section">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="portfolio-details-slider swiper init-swiper">
-
+    <div class="portfolio-details-slider">
       <script type="application/json" class="swiper-config">
         {
           "loop": true,
@@ -118,7 +117,7 @@
           }
         }
       </script>
-
+      <div class="swiper">
       <div class="swiper-wrapper">
 
         <!-- Slide 1 -->
@@ -144,7 +143,7 @@
               <div class="portfolio-description">
                 <h2>Escape from Footprint</h2>
                 <p>
-                  Escaepe frome Footprint는 보이지 않는 적의 발자국과 소리를 통해 적의 위치를 파악하여 피하거나 적을 사살하고 맵에 숨겨진 열쇠를 찾아 탈출하는 게임입니다. 
+                  Escaepe frome Footprint는 2D 탑뷰 생존 어드벤처 게임으로 보이지 않는 적의 발자국과 소리를 통해 적의 위치를 파악하여 피하거나 적을 사살하고 맵에 숨겨진 열쇠를 찾아 탈출하는 게임입니다. 
                 </p>
               </div>
             </div>
@@ -155,28 +154,32 @@
         <div class="swiper-slide">
           <div class="row gy-4">
             <div class="col-lg-8">
-              <img src="assets/img/portfolio/EscapefromFootprint.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/AcaneEdge_Main.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-4">
               <div class="portfolio-info">
                 <h3>Project information</h3>
                 <ul>
                   <li><strong>Category</strong>: C/C++ Game</li>
-                  <li><strong>Engine</strong>: C Processing</li>
-                  <li><strong>Project date</strong>: 10 April, 2025 - 14 May, 2025</li>
-                  <li><strong>Project URL</strong>: <a href="https://github.com/fenrir94/Hidden_Pickle">GitHub</a></li>
+                  <li><strong>Engine</strong>: Alpha Engine</li>
+                  <li><strong>Participants</strong>: 2</li>
+                  <li><strong>Role</strong>: TileMap, Collision</li>
+                  <li><strong>Project date</strong>: 6 June 2025 - 17 July, 2025</li>
+                  <li><strong>Download Link</strong>: <a href="https://github.com/WestMinsu/AlphaEngineProject/releases/tag/1.0.0">Download</a></li>
+                  <li><strong>Play Video</strong>: <a href="https://drive.google.com/file/d/1D-64AiDaVrS0fcdRNqZa_dXUOPuvRaAz/view?usp=sharing">Play Video</a></li>
+                  <li><strong>Project URL</strong>: <a href="https://github.com/WestMinsu/AlphaEngineProject">GitHub</a></li>
                 </ul>
               </div>
               <div class="portfolio-description">
-                <h2>Escape from Footprint</h2>
+                <h2>Acane Edge</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies eros vitae urna dapibus, vel convallis sapien efficitur.
+                  Acane Edge는 2D 횡스크롤 런앤건 게임으로 적의 속성에 따라 무기를 변경하여 모든 적을 처치하고 마지막 보스를 처치하는 게임입니다.
                 </p>
               </div>
             </div>
           </div>
         </div>
-
+      </div>
       </div> <!-- swiper-wrapper -->
       <div class="swiper-pagination"></div>
     </div> <!-- portfolio-details-slider -->
@@ -221,8 +224,36 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const config = {
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 5000
+      },
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    };
+
+    const swiper = new Swiper('.portfolio-details-slider .swiper', config);
+    window.swiper = swiper;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const slideIndex = parseInt(urlParams.get('slide'));
+
+    if (!isNaN(slideIndex)) {
+      swiper.slideToLoop(slideIndex); // loop 
+    }
+  });
+</script>
 </body>
 
 </html>
