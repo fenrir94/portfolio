@@ -31,6 +31,15 @@
     .profile-img {
       width: 200px; 
     }
+	
+	.portfolio-description h4 {
+      margin-top: 20px;
+    }
+	
+	.portfolio-subsection {
+      padding-top: 10px;   
+      margin-top: 0;
+    }
   </style>
 
   <!-- =======================================================
@@ -64,20 +73,12 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Summary</a></li>
         <li class="dropdown"><a href="#portfolio"><i class="bi bi-menu-button navicon"></i> <span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li class="dropdown"><a href="#"><span>Unreal Engine</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">RPG</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#"><span>C/C++</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="portfolio-details.html">CProcessing</a></li>
-                <li><a href="portfolio-details.html">AlphaEngine</a></li>
-              </ul>
-            </li>
+            <li><a href="#">RPG</a></li>
+            <li><a href="">AlphaEngine</a></li>
+            <li><a href="">CProcessing</a></li>
           </ul>
         </li>
       </ul>
@@ -203,64 +204,119 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
+		<section class="project">
+          <div class="portfolio-subsection row gy-2">
+            <div class="col-lg-8">
+              <img src="assets/img/portfolio/DualBlade.gif" alt="Dual Blade Gameplay" style="width:100%; object-fit:cover;">
+			  </iframe>
+              <div class="portfolio-description">
+                <h2>Dual Blade</h2>
+                <p>
+                  Dual Blade는 3D 액션 RPG 게임으로 암살자가 되어 암살 임무를 수주받아 암살 대상 보스를 처치하는 게임입니다.
+                </p>
+				<h4>주요 작업 내역</h4>
+                <ul class="work-list">
+                  <li>GAS를 활용한 전투 시스템 구현</li>
+                  <li>플레이어 캐릭터 스킬 GA 구현</li>
+                  <li>보스 캐릭터 패턴 GA 구현</li>
+                  <li>GameplayhTag를 활용한 보스 캐릭터 AI Behavior Tree 구현</li>
+                  <li>타격감을 위한 Hit Pause, Camera Shake, GamepalyCue 구현</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Engine</strong>: Unreal Engine 5.6</li>
+                  <li><strong>Participants</strong>: 2</li>
+                  <li><strong>Role</strong>: Combat System, Characters, Skills</li>
+                  <li><strong>Project date</strong>: 1 September 2025 - 19 December, 2025</li>
+                  <li><strong>Download Link</strong>: <a href="">Download</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+		</section>
+		<section class="project">
+          <div class="portfolio-subsection row gy-2">
+            <div class="col-lg-8">
+              <iframe src="https://drive.google.com/file/d/1D-64AiDaVrS0fcdRNqZa_dXUOPuvRaAz/preview" 
+			  			  width="100%" height="480" allow="autoplay" allowfullscreen>
+			  </iframe>
+              <div class="portfolio-description">
+                <h2>Arcane Edge</h2>
+                <p>
+                  Arcane Edge는 2D 횡스크롤 런앤건 게임으로 적의 속성에 따라 무기를 변경하여 모든 적을 처치하고 마지막 보스를 처치하는 게임입니다.
+                </p>
+				<h4>주요 작업 내역</h4>
+                <ul class="work-list">
+                  <li>Tiled를 활용한 TileMap 생성 및 TileMap json 데이터와 TileSet xml 데이터 파싱</li> 
+				  <li>TileMap과 TileSet 데이터 기반으로 TileMap 객체 생성 구현</li>
+                  <li>AABB 충돌 기반 TileMap 충돌 판정 및 캐릭터의 타일맵 충돌 처리 구현</li>
+                  <li>State Pattern을 적용한 게임 스테이트 변경 환경 구축</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Engine</strong>: Alpha Engine(C++ Custom Engine)</li>
+                  <li><strong>Participants</strong>: 2</li>
+                  <li><strong>Role</strong>: TileMap, Collision</li>
+                  <li><strong>Project date</strong>: 6 June 2025 - 17 July, 2025</li>
+                  <li><strong>Project URL</strong>: <a href="https://github.com/WestMinsu/AlphaEngineProject">GitHub</a></li>
+                  <li><strong>Download Link</strong>: <a href="https://github.com/WestMinsu/AlphaEngineProject/releases/tag/1.0.0">Download</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+		</section>
+		
+		<section class="project">
+		  <div class="portfolio-subsection row gy-2">
+            <div class="col-lg-8">
+              <iframe src="https://drive.google.com/file/d/1i8o4cIEUUz3HGpJOtxA5wHReE7EMRIyL/preview" 
+			  width="100%" height="480" allow="autoplay" allowfullscreen>
+			  </iframe>
+              <div class="portfolio-description">
+                <h2>Escape from Footprint</h2>
+                <p>
+                  Escaepe frome Footprint는 2D 탑뷰 생존 어드벤처 게임으로 보이지 않는 적의 발자국과 소리를 통해 적의 위치를 파악하여 피하거나 적을 사살하고 맵에 숨겨진 열쇠를 찾아 탈출하는 게임입니다. 
+                </p>
+				<h4>주요 작업 내역</h4>
+                <ul class="work-list">
+                  <li>플레이어 캐릭터 및 사용 아이템 구현</li>
+                  <li>원 충돌 판정 및 처리 구현</li>
+                  <li>총 사격 시스템 구현</li>
+                  <li>캐릭터 상하체 애니메이션 구현</li>
+                  <li>Queue를 활용한 적 발자국의 라이프 사이클 구현</li>
+                  <li>적 패트롤 및 추적 AI 구현</li>
+                  <li>맵 오브젝트(나무, 탈출구 등) 구현</li>
+				  </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Engine</strong>: C Processing(C Custom Engine)</li>
+                  <li><strong>Participants</strong>: 2</li>
+                  <li><strong>Role</strong>: GameObjects(Player, Footprint, Items, etc), Collision</li>
+                  <li><strong>Project date</strong>: 10 April, 2025 - 14 May, 2025</li>
+                  <li><strong>Project GitHub</strong>: <a href="https://github.com/fenrir94/Hidden_Pickle">Github Link</a></li>
+                  <li><strong>Download Link</strong>: <a href="https://github.com/fenrir94/Hidden_Pickle/releases">Download</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+		</section>
       </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-UE">UE</li>
-            <li data-filter=".filter-cpp">C/C++</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cpp">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/EscapefromFootprint.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>RPG</h4>
-                  <p>Avoid invisible Enemies and Escape</p>
-                  <a href="portfolio-details.html?slide=0" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cpp">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/AcaneEdge.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Acane Edge</h4>
-                  <p>Defeat All Enemies</p>
-                  <a href="portfolio-details.html?slide=1" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cpp">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/EscapefromFootprint.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Escape from Footprint</h4>
-                  <p>Avoid invisible Enemies and Escape</p>
-                  <a href="portfolio-details.html?slide=0" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
 
     </section><!-- /Portfolio Section -->
 
