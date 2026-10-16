@@ -69,7 +69,7 @@ export const projects = [
     engine: "Unreal Engine 5.6",
     date: "2025.08 — 2025.12",
     role: "Combat System · Characters · Skills",
-    image: "/images/dual-blade.jpg",
+    image: `${import.meta.env.BASE_URL}images/dual-blade.jpg`,
     video: "https://drive.google.com/file/d/1BF1IPPNmX4d3z8vKVu6MW_C-VudNFv0B/preview",
     download: "https://drive.google.com/file/d/11LQw_lpwrKWmxB2gpAGBblP_Ndk6E9gI/view?usp=sharing",
     description:
@@ -102,7 +102,7 @@ export const projects = [
     engine: "Alpha Engine · C++",
     date: "2025.06 — 2025.07",
     role: "TileMap · Collision",
-    image: "/images/arcane-edge.jpg",
+    image: `${import.meta.env.BASE_URL}images/arcane-edge.jpg`,
     video: "https://drive.google.com/file/d/1D-64AiDaVrS0fcdRNqZa_dXUOPuvRaAz/preview",
     github: "https://github.com/WestMinsu/AlphaEngineProject",
     download: "https://github.com/WestMinsu/AlphaEngineProject/releases/tag/1.0.1",
@@ -136,7 +136,7 @@ export const projects = [
     engine: "C Processing · C",
     date: "2025.04 — 2025.05",
     role: "Gameplay · Collision · AI",
-    image: "/images/escape-footprint.jpg",
+    image: `${import.meta.env.BASE_URL}images/escape-footprint.jpg`,
     video: "https://drive.google.com/file/d/1i8o4cIEUUz3HGpJOtxA5wHReE7EMRIyL/preview",
     github: "https://github.com/fenrir94/Hidden_Pickle",
     download: "https://github.com/fenrir94/Hidden_Pickle/releases",
@@ -390,7 +390,7 @@ function HomePage() {
               </div>
             </div>
             <div className="about-photo !min-h-0 aspect-[3/4] w-[clamp(180px,18vw,280px)] self-end justify-self-start ml-[3.5vw] mb-[clamp(48px,7vw,100px)]">
-              <img src="/images/profile.jpg" alt="최영원" />
+              <img src={`${import.meta.env.BASE_URL}images/profile.jpg`} alt="최영원" />
               <div className="photo-label">
               </div>
             </div>
