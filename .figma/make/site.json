@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your game development projects with a professional portfolio that highlights your skills, creativity, and experience to potential employers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
